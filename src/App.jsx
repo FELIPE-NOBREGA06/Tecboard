@@ -1,27 +1,59 @@
 import "./App.css";
-
-function FormularioDeEvento() {
-  return (
-    <form className="form-evento">
-      <h2>Preencha para criar um evento:</h2>
-      <fieldset>
-        <label htmlFor="nome">Qual o nome do evento?</label>
-        <input type="text" id="nome" />
-      </fieldset>
-    </form>
-  );
-}
+import { Banner } from "./componentes/banner";
+import { CardEvento } from "./componentes/CardEvento";
+import { FormularioDeEvento } from "./componentes/FormularioDeEvento";
+import { Tema } from "./componentes/Tema";
 
 function App() {
+  const temas = [
+    {
+      id: 1,
+      nome: "front-end",
+    },
+    {
+      id: 2,
+      nome: "back-end",
+    },
+    {
+      id: 3,
+      nome: "devops",
+    },
+    {
+      id: 4,
+      nome: "inteligência artificial",
+    },
+    {
+      id: 5,
+      nome: "data science",
+    },
+    {
+      id: 6,
+      nome: "cloud",
+    },
+  ];
+
+  const eventos = [
+    {
+      capa: "https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png",
+      tema: temas[0],
+      data: new Date(),
+      titulo: "Mulhres no front",
+    },
+  ];
+
   return (
     <main>
       <header>
         <img src="/logo.png" alt="" />
       </header>
-      <section>
-        <img src="/banner.png" alt="" />
-      </section>
+      <Banner />
       <FormularioDeEvento />
+      {temas.map((tema) => (
+        <section key={tema.id}>
+          <Tema tema={tema} />
+          <CardEvento evento={eventos[0]} />
+        </section>
+      ))}
     </main>
   );
 }
