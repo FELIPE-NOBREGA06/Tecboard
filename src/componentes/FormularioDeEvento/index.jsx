@@ -8,7 +8,7 @@ import { TituloFormulario } from "../TituloFormulario";
 import { Botao } from "../Botao";
 import { ListaSuspensa } from "../ListaSuspensa";
 
-export function FormularioDeEvento({ temas }) {
+export function FormularioDeEvento({ temas, aoSubmeter }) {
   function aoFormSubmetido(event) {
     event.preventDefault();
 
@@ -20,8 +20,7 @@ export function FormularioDeEvento({ temas }) {
       data: new Date(formData.get("dataEvento")),
       tema: temas.find((item) => item.id === formData.get("tema")),
     };
-
-    console.log("esse é o evento", evento);
+    aoSubmeter(evento)
   }
 
   return (
