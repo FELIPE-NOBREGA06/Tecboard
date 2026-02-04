@@ -1,4 +1,3 @@
-![Capa do projeto](capa.png)
 
 # Tecboard
 
@@ -103,5 +102,4 @@ Este projeto é de código aberto e disponível para uso livre.
 
 ---
 
-Desenvolvido com ❤️ para a comunidade tech
 
