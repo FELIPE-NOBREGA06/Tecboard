@@ -2,77 +2,106 @@
 
 # Tecboard
 
-Seu hub de eventos de tecnologia! Este projeto foi construído com React e tem como objetivo facilitar a criação e visualização de eventos voltados para temas como Front-end, Back-end, Cloud e muito mais.
+Seu hub de eventos de tecnologia! Uma aplicação moderna para criar e organizar eventos de tecnologia com temas como Front-end, Back-end, Cloud e muito mais.
 
-## 🔨 Funcionalidades do projeto
+## 🎯 Funcionalidades
 
-- Criação de eventos personalizados com imagem, título, data e tema.
-- Organização dos eventos por tema.
-- Persistência dos dados em memória (estado local do React).
+- ✨ Criação de eventos personalizados com imagem, título, data e tema
+- 📂 Organização automática dos eventos por categoria
+- 💾 Gerenciamento de dados em tempo real com React
+- 🎨 Interface intuitiva e responsiva
 
 ![Screenshot do projeto](screencapture.png)
 
-## ✔️ Técnicas e tecnologias utilizadas
+## 🛠️ Stack Tecnológico
 
-- **React + Vite**: Estrutura leve para desenvolvimento com React.
-- **useState**: Para gerenciamento do estado local dos eventos.
-- **Componentização**: Separação clara de responsabilidades por componente.
-- **Formulários com `FormData`**: Captura de dados estruturada.
-- **CSS Modules**: Estilos organizados por componente com escopo local.
-- **Google Fonts (Work Sans + Orbitron)**: Tipografia personalizada.
+- **React 19** - Biblioteca UI moderna
+- **Vite** - Build tool rápido e eficiente
+- **React Hooks (useState)** - Gerenciamento de estado
+- **CSS Modular** - Estilos organizados por componente
+- **FormData API** - Captura estruturada de dados
+- **Google Fonts** - Tipografia (Work Sans + Orbitron)
 
-## 🛠️ Como rodar o projeto
+## 🚀 Como começar
 
-1. Clone o repositório:
+### Pré-requisitos
+- Node.js 16+
+- npm ou yarn
+
+### Instalação
 
 ```bash
+# Clone o repositório
 git clone https://github.com/seu-usuario/tecboard.git
 cd tecboard
-```
 
-2. Instale as dependências:
-
-```bash
+# Instale as dependências
 npm install
-```
 
-3. Rode o projeto localmente:
-
-```bash
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-4. Acesse no navegador:
+Acesse `http://localhost:5173` no seu navegador.
+
+### Comandos disponíveis
+
+```bash
+npm run dev      # Inicia servidor de desenvolvimento
+npm run build    # Cria build otimizado para produção
+npm run preview  # Visualiza build de produção localmente
+npm run lint     # Verifica qualidade do código
+```
+
+## 📦 Recursos de imagens
+
+O projeto suporta imagens externas. Você pode usar URLs diretas ou adicionar suas próprias imagens:
 
 ```
-http://localhost:5173
-```
-
-**Imagens disponíveis:**
-
-- `imagem_1.png` até `imagem_15.png`
-- `imagem_extra_1.png` até `imagem_extra_15.png`
-
-**Formato de uso direto no projeto:**
-
-```txt
 https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png
-https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_extra_9.png
 ```
 
-## 📚 Sobre o projeto
+## 📖 Estrutura do projeto
 
-Esse projeto foi desenvolvido com fins educacionais para praticar:
+```
+src/
+├── componentes/          # Componentes reutilizáveis
+│   ├── Banner/
+│   ├── Botao/
+│   ├── CampoDeEntrada/
+│   ├── FormularioDeEvento/
+│   ├── CardEvento/
+│   └── ...
+├── App.jsx              # Componente principal
+├── App.css              # Estilos globais
+└── main.jsx             # Ponto de entrada
+```
 
-- Componentização no React.
-- JSX.
-- Manipulação de formulários e dados.
-- Estilização com CSS.
-- Uso de props e renderização condicional.
+## 🎓 Conceitos praticados
 
-Ideal para quem quer dar os primeiros passos em React criando algo visual, interativo e útil.
+- Componentização e reutilização de componentes
+- JSX e renderização condicional
+- Gerenciamento de estado com hooks
+- Manipulação de formulários
+- Estilização modular com CSS
+- Props e comunicação entre componentes
 
-Se quiser adicionar deploy com Vercel, persistência com LocalStorage ou backend com Firebase, este projeto é uma ótima base para evoluir!
+## 🚀 Próximos passos
 
-Vida longa e próspera 🖖
+Ideias para evoluir o projeto:
+
+- Persistência com LocalStorage
+- Deploy com Vercel ou Netlify
+- Backend com Firebase ou Node.js
+- Filtros avançados de eventos
+- Sistema de favoritos
+- Autenticação de usuários
+
+## 📝 Licença
+
+Este projeto é de código aberto e disponível para uso livre.
+
+---
+
+Desenvolvido com ❤️ para a comunidade tech
 
